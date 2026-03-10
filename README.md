@@ -17,7 +17,7 @@ Basically it's https://github.com/aronsky/esphome-components and https://github.
 ```yaml
 external_components:
   # shorthand
-  source: github://zt8989/esphome-lampsmart-pro
+  source: github://kairohmer/esphome-lampsmart-pro
 
 light:
   - platform: lampsmart_pro_light
@@ -26,9 +26,4 @@ light:
     default_transition_length: 0s
     duration: 500
 
-fan:
-  - platform: lampsmart_pro_light
-    group: 1
-    name: Bed Room Fan
-    duration: 500
 ```

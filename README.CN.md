@@ -26,9 +26,4 @@ light:
     default_transition_length: 0s
     duration: 500
 
-fan:
-  - platform: lampsmart_pro_light
-    group: 1
-    name: Bed Room Fan
-    duration: 500
 ```
