@@ -17,8 +17,9 @@ namespace esphome
 
     void LampSmartProLight::setup()
     {
-      register_service(&LampSmartProLight::on_pair, "pair_" + light_state_->get_object_id_to());
-      register_service(&LampSmartProLight::on_unpair, "unpair_" + light_state_->get_object_id_to());
+      char buf[128];
+      register_service(&LampSmartProLight::on_pair, "pair_" + light_state_->get_object_id_to(buf));
+      register_service(&LampSmartProLight::on_unpair, "unpair_" + light_state_->get_object_id_to(buf));
     }
 
     light::LightTraits LampSmartProLight::get_traits()
